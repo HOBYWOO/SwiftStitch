@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sw View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SwViewController" customModule="SwiftStitch" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-XX-KE7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-bD-gps">
+                                <rect key="frame" x="188" y="164" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="84"/>
+                                <color key="textColor" red="1" green="0.36470588235294116" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1od-pu-Hui" userLabel="imageStrLabel">
+                                <rect key="frame" x="162" y="244" width="53" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRk-eH-jIT">
+                                <rect key="frame" x="195" y="573" width="164" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.36470588235294116" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="K0p-vE-31K"/>
+                                    <constraint firstAttribute="width" constant="164" id="ceu-HX-BTw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="  生成全景图" image="compose_generatebutton_background">
+                                    <color key="titleColor" red="0.97266132760000001" green="0.96132593570000002" blue="0.92886462079999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="generate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctU-9J-vSg"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="3AV-ht-xfb">
+                                <rect key="frame" x="178" y="298" width="20" height="20"/>
+                                <color key="color" red="0.96078431369999995" green="0.44668589419310339" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugg-cL-tJh">
+                                <rect key="frame" x="16" y="573" width="164" height="44"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="OJF-Eg-xVC"/>
+                                    <constraint firstAttribute="height" constant="44" id="tT1-b3-Wcj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="  拍摄照片" image="compose_camerabutton_background">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJV-7q-Qb2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-h3-ru8">
+                                <rect key="frame" x="-163" y="573" width="164" height="44"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="U3t-4y-3FP"/>
+                                    <constraint firstAttribute="width" constant="164" id="uyA-Oq-gaS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="  保存照片">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToAlbum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64X-Cy-Z42"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1od-pu-Hui" firstAttribute="centerY" secondItem="1Yx-bD-gps" secondAttribute="centerY" id="4aV-kE-LTc"/>
+                            <constraint firstItem="IRk-eH-jIT" firstAttribute="leading" secondItem="Ugg-cL-tJh" secondAttribute="trailing" constant="15" id="58g-9p-6Ju"/>
+                            <constraint firstItem="1od-pu-Hui" firstAttribute="top" secondItem="1Yx-bD-gps" secondAttribute="bottom" id="6We-Zn-7hn"/>
+                            <constraint firstItem="UvU-XX-KE7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="8Af-f4-SaD"/>
+                            <constraint firstItem="UvU-XX-KE7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EbT-43-RTy"/>
+                            <constraint firstItem="1Yx-bD-gps" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-170" id="GSZ-rm-m9D"/>
+                            <constraint firstItem="UvU-XX-KE7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="H7E-L7-fmL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ugg-cL-tJh" secondAttribute="bottom" constant="50" id="J0r-sH-piA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2qu-h3-ru8" secondAttribute="bottom" constant="50" id="VFd-mg-sem"/>
+                            <constraint firstItem="Ugg-cL-tJh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XFT-2o-uvD"/>
+                            <constraint firstItem="3AV-ht-xfb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-25" id="bWM-HY-7fT"/>
+                            <constraint firstItem="1Yx-bD-gps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dim-ac-auO"/>
+                            <constraint firstItem="1od-pu-Hui" firstAttribute="centerX" secondItem="1Yx-bD-gps" secondAttribute="centerX" id="jVP-x3-Kgb"/>
+                            <constraint firstItem="3AV-ht-xfb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDY-Rl-PaM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IRk-eH-jIT" secondAttribute="bottom" constant="50" id="n8g-sg-fwd"/>
+                            <constraint firstAttribute="trailing" secondItem="UvU-XX-KE7" secondAttribute="trailing" id="t8e-J0-zvh"/>
+                            <constraint firstItem="2qu-h3-ru8" firstAttribute="trailing" secondItem="Ugg-cL-tJh" secondAttribute="leading" constant="-15" id="vCR-7w-In0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4aV-kE-LTc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="Ugg-cL-tJh" id="Eo6-pw-426"/>
+                        <outlet property="addPhotoLeading" destination="XFT-2o-uvD" id="iS6-VB-NsR"/>
+                        <outlet property="countLabel" destination="1Yx-bD-gps" id="zLD-zH-qqq"/>
+                        <outlet property="generateButton" destination="IRk-eH-jIT" id="how-Qo-rge"/>
+                        <outlet property="imageStrLabel" destination="1od-pu-Hui" id="567-1z-yBe"/>
+                        <outlet property="savingButton" destination="2qu-h3-ru8" id="eLr-TO-wtC"/>
+                        <outlet property="scrollView" destination="UvU-XX-KE7" id="IZj-JX-Ff4"/>
+                        <outlet property="spinner" destination="3AV-ht-xfb" id="379-eg-8QM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231.5" y="282.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="compose_camerabutton_background" width="24" height="21"/>
+        <image name="compose_generatebutton_background" width="24" height="21"/>
+    </resources>
+</document>
